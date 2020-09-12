@@ -10,25 +10,25 @@ import pl.sda.final_project.service.WeatherService;
 
 public class HomePageController {
 
-   // private final WeatherService weatherService;
+    //private final WeatherService weatherService;
     private final UserService userService;
 
-    public HomePageController(WeatherService weatherService, UserService userService) {
+    public HomePageController( UserService userService) {
        // this.weatherService = weatherService;
         this.userService = userService;
     }
 
-    @GetMapping("/")
-    public ModelAndView showMainWithWeather() {
-
-        // double cityTemperature = weatherService.getCityTemperature(userService.getCurrentUser().getUserCity());
-
-        double cityTemperature = 22;
-
-        return new ModelAndView("index",
-                "temperature",
-                cityTemperature);
-    }
+//    @GetMapping("/")
+//    public ModelAndView showMainWithWeather() {
+//
+//        // double cityTemperature = weatherService.getCityTemperature(userService.getCurrentUser().getUserCity());
+//
+//        double cityTemperature = 22;
+//
+//        return new ModelAndView("index",
+//                "temperature",
+//                cityTemperature);
+//    }
 
 
 }
