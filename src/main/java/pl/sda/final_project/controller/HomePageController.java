@@ -10,11 +10,11 @@ import pl.sda.final_project.service.WeatherService;
 
 public class HomePageController {
 
-    private final WeatherService weatherService;
+   // private final WeatherService weatherService;
     private final UserService userService;
 
     public HomePageController(WeatherService weatherService, UserService userService) {
-        this.weatherService = weatherService;
+       // this.weatherService = weatherService;
         this.userService = userService;
     }
 
