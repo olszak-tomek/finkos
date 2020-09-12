@@ -19,7 +19,7 @@ public class WeatherService {
 
     public double getCityTemperature(String city) {
 
-        String basicWeatherTemplate = "https://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&appid=%s";
+        String basicWeatherTemplate = "https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=22d217c02ebda55fed8d57a914d829bd";
         String fullURL = String.format(basicWeatherTemplate, city, openWeatherKey);
 
         FullWhetherInfo whether = restTemplate.getForObject(fullURL, FullWhetherInfo.class);
